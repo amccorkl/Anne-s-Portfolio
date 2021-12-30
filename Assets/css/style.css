@@ -29,7 +29,7 @@ nav {
 }
 
 ul {
-    /* want the links to go to the next level when shrunk*/
+    /* want the links to go to the next level when shrunk but they aren't*/
     position: relative;
     right: 1em;
     display: inline-flex;
@@ -68,7 +68,13 @@ a :hover ::after {
     flex-wrap: wrap;
 }
 
-#id
+/* the image is should grow when I hover over 1 :hover ::after */
+.card img  {
+    height: 150px;
+    width: 100px;
+    display: flex;
+    flex: 1 0 25%;
+}
 
 /* trying to get the nav bar to stack when the screen shrinks*/
 
