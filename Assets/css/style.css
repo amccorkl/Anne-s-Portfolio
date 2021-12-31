@@ -14,78 +14,113 @@
 header {
     display: flex;
     background-color: rgb(7, 170, 170);
+
 }
 
 h1 {
-    width: 50%;
     text-align: center;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 nav {
-    width: 50%;
     position: relative;
-    height: 125px;
+    height: 100px;
+    display: flex;
     
 }
 
 ul {
     /* want the links to go to the next level when shrunk but they aren't*/
-    position: relative;
-    right: 1em;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-
 li {
-    margin: 1.5em;
-    list-style-type: none; /*could add picture images here*/
+    margin: .75em;
+    list-style-type: none; 
 }
-
 
 a :hover ::after {
     color: brown;
 }
 
 .section {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; need to have a parent for display flex*/
     background-color: rgb(183, 193, 204);
     height: 30%;
     padding: 20px;
     border: 1px solid black;
-    
-}
-
-.section a {
-    flex: 1 0 25%;
+        
 }
 
 .titles {
     text-align: center;
+    width: 25%;
 }
 
-#id {
-    flex-wrap: wrap;
+#bio img {
+    width: 150px;
+    height: auto;
+    float: right;
 }
 
-/* the image is should grow when I hover over 1 :hover ::after */
-.card img  {
-    height: 150px;
-    width: 100px;
+.portfolio-grid {
+    position: relative;
     display: flex;
-    flex: 1 0 25%;
+    flex-wrap: wrap;
+    border: 1px solid black;
 }
 
-/* trying to get the nav bar to stack when the screen shrinks*/
-
-@media screen and (max-width: 992px) {
-    .header {
-        display: inline-flex;
-    }
+/*can't get the smaller two images to wrap*/
+.secondary-grid {
+    position: relative;
+    flex: 0 1;
 }
 
+.banner {
+    position: absolute;
+    background-color: darkgrey;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Work section styling */
+#main-image {
+    width: 100%;
+}
+
+#work {
+    display: flex;
+   
+}
+/* growing flex doesn't work yet, the image is should grow when I hover over 1 :hover ::after */
+
+#project1   {
+   position: relative;
+}
+
+#project2, 
+#project3  {
+    position: relative;
+    width: 40px;
+    height: auto;
+}
+
+
+
+
+/*makes the screen responsive*/
 @media screen and (max-width: 768px) {
-    .header {
-        display: block;
+    header {
+        flex-direction: column;
+    }
+     /*add something for the "work" area to this too*/
+    .secondary-grid {
+        flex-wrap: wrap;
     }
 }

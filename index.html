@@ -1,82 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
     <title>Anne's Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <!--styled header-->
+      <header>
+        <h1>Anne McCorkle's Portfolio</h1>
+        <!--nav bar with links to the sections below-->
+        <nav>
+          <ul>
+            <li>
+              <a href="#bio">Short Bio</a>
+            </li>
+            <li>
+              <a href="#work">Work on Github </a>
+            </li>
+            <li>
+              <a href="#contact">Contact Information</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <!--styled header-->
-        <header>
-            <h1>Anne McCorkle's Portfolio</h1>   
-            <!--nav bar with links to the sections below-->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#Bio">Short Bio</a>
-                    </li>
-                    <li>
-                        <a href="#Work">Work on Github
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Contact">Contact Information</a>
-                    </li>
-                    
-                </ul>
-            </nav>
-        </header>
-
-        <main>
+      <main>
         <!--styled main body of the portfolio-->
-        
-            <section class="section" id="Bio">
-                <h2 class="titles">Short Bio</h2>
-                <!--# needs a picture of me, save it in assets? have it float right?-->
-                <img src="https://via.placeholder.com/100" alt="Placeholder Picture for me">
-                <p>I am a student in a bootcamp offered through Denver University as a first step in looking at a future career change. Currently, I am an instructional coach who helps design school district and individual school professional development, works with teachers on their goals for increased student achievement and growth, and acts as a stop-gap measure during our covid craziness. </p>
-                               
-            </section>
 
-            <section class="section" id="Work">
-                <h2 class="titles">Work</h2>
-                <!--github link to the projects-->
-                
-                <!-- how do I get it to grow when I hover over it flex 1 0 0 ?-->
-                <div class="card">  
-                    <h3>
-                        <a href="https://amccorkl.github.io/Horiseon-Project/">Horiseon Mock-up</a>
-                    </h3>
-                        <!--the image is huge?????-->
-                        <img src="./Assets/images/Horiseon final-view.png" alt="image of the project">
-                    
-                </div>
-                
-                <div>
-                    <h3>
-                        <a href="#">Other Examples</a>
-                    </h3>
-                    <img src="#" alt="Coming Soon">
+        <section class="section" id="bio">
+          <img
+            src="./Assets/images/B9689B35-CE3F-4C54-81B0-5F169753FCA5.png"
+            alt="Portfolio Picture of Anne"
+          />
+          <h2 class="titles">Short Bio</h2>
 
-                </div>
-                                             
+          <p>
+            I am a student in a bootcamp offered through Denver University as a
+            first step in looking at a future career change. Currently, I am an
+            instructional coach who helps design school district and individual
+            school professional development, works with teachers on their goals
+            for increased student achievement and growth, and acts as a stop-gap
+            measure during our covid craziness.
+          </p>
+        </section>
 
-            </section>
+        <section class="section" id="work">
+          <h2 class="titles">Work</h2>
 
-            <section class="section" id="Contact">
-                <h2 class="titles">Contact</h2>
-                <!--add a link here for my resume even if it doesn't have coding experience on it-->
-                <h3><a href="#">My Resume</a></h3>
-                <h3><a href="annefmccorkle@gmail.com">My Email</a></h3>
+          <div class="portfolio-grid">
+            <div>
+              <img
+                src="./Assets/images/Screen Shot 2021-12-30 at 3.38.02 PM.png"
+                alt="Screenshot of project"
+                id="main-image"
+              />
+              <!--the link doesn't work right now to github-->
+              <a href="horiseon project click to github">
+                <div class="banner">Project 1</div>
+              </a>
+            </div>
+          </div>
 
-            </section>
-        </main>
+          <div class="portfolio-grid">
+            <div>
+              <img src="#" alt="Screenshot of project2" class="secondary-grid"/>
+              <!--the link doesn't work right now to github-->
+              <a href="https://via.placeholder.com/300">
+                <div class="banner">Project 2</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-grid">
+            <div>
+              <img src="#" alt="Screenshot of project3" class="secondary-grid"/>
+              <!--the link doesn't work right now to github-->
+              <a href="https://via.placeholder.com/300">
+                <div class="banner">Project 3</div>
+              </a>
+            </div>
+          </div>
+
+          
+        </section>
+
+        <section class="section" id="contact">
+          <h2 class="titles">Contact</h2>
+          <!--add a link here for my resume even if it doesn't have coding experience on it-->
+          <div class="contact-grid">
+
+          
+            <h3><a href="#">My Resume</a></h3>
+          
+
+            <h3><a href="annefmccorkle@gmail.com">My Email</a></h3>
+          </div>
+
+        </section>
+
+      </main>
 
     </div>
-</body>
+
+  </body>
+  
 </html>
