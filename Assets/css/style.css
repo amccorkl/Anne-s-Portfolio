@@ -2,19 +2,22 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+a {
+    color: rgb(51, 48, 48);
+    font-size: 20px;
+}
 
 /*order - should this class css code go after the remaining elements codes?*/
 .container {
     max-width: 90%;
     margin: 0 auto;
     border: 1px solid black;
+    position: relative;
     }
 
 header {
     display: flex;
-    background-color: rgb(7, 170, 170);
-
+    background-color: rgb(141, 88, 165);
 }
 
 h1 {
@@ -24,15 +27,13 @@ h1 {
 }
 
 nav {
-    position: relative;
     height: 100px;
     display: flex;
-    
 }
 
-ul {
+nav ul {
     /* want the links to go to the next level when shrunk but they aren't*/
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
@@ -43,21 +44,21 @@ li {
 }
 
 a :hover ::after {
-    color: brown;
+    color: rgb(26, 4, 4);
 }
 
 .section {
     /* flex-wrap: wrap; need to have a parent for display flex*/
     background-color: rgb(183, 193, 204);
-    height: 30%;
-    padding: 20px;
+        padding: 20px;
     border: 1px solid black;
-        
 }
 
 .titles {
     text-align: center;
-    width: 25%;
+    width: 20%;
+    height: auto;
+    border-right: 1px solid black;
 }
 
 #bio img {
@@ -66,17 +67,33 @@ a :hover ::after {
     float: right;
 }
 
+p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Github Work section styling */
 .portfolio-grid {
+    
     position: relative;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid black;
+    padding: 3px;
+    margin: 20px;
 }
 
-/*can't get the smaller two images to wrap*/
-.secondary-grid {
-    position: relative;
-    flex: 0 1;
+#main-image {
+    width: 100%;
+    height: auto;
+}
+
+.secondary-images  {
+    width: 50%;
+    border: 1px solid black;
+}
+.secondary-images img {
+    width: 100% ;
 }
 
 .banner {
@@ -89,28 +106,18 @@ a :hover ::after {
     font-size: 20px;
 }
 
-/* Work section styling */
-#main-image {
-    width: 100%;
-}
-
-#work {
+footer  {
+    background-color: rgb(141, 88, 165); 
+    margin: 0 auto;
+    padding: 10px;
     display: flex;
-   
-}
-/* growing flex doesn't work yet, the image is should grow when I hover over 1 :hover ::after */
-
-#project1   {
-   position: relative;
 }
 
-#project2, 
-#project3  {
-    position: relative;
-    width: 40px;
-    height: auto;
+footer li {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
-
 
 
 
@@ -119,8 +126,7 @@ a :hover ::after {
     header {
         flex-direction: column;
     }
-     /*add something for the "work" area to this too*/
-    .secondary-grid {
-        flex-wrap: wrap;
-    }
+     /*add something for the "work" area to this .secondary-image {
+    flex: 0 1 20%; too*/
+      
 }
