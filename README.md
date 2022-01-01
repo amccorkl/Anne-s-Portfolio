@@ -8,3 +8,6 @@ Project 1 has a link to the deployed Horiseon Refactoring page while Project 2 a
 
 ## Mock-up
 
+The following screenshot shows the webpage's appearance:
+
+![portfolio]()
