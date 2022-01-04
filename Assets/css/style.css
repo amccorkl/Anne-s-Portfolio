@@ -130,10 +130,37 @@ footer li {
 
 
 /*makes the screen responsive*/
+@media screen and (max-width: 980px) {
+    header {
+        flex-direction: column;
+        }
+    
+    .portfolio-grid {
+        justify-content: center;
+        align-items: column;
+    }
+}
+     
+      
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
     }
      
-      
+    .portfolio-grid {
+        justify-content: center;
+        align-items: column;
+    }
 }
+
+@media screen and (max-width: 481px) {
+    header {
+        flex-direction: column;
+    }
+     
+    .portfolio-grid {
+        justify-content: center;
+        align-items: column;
+    }
+}
+
