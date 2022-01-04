@@ -78,8 +78,8 @@ p {
 /* Github Work section */
 .portfolio-grid {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 50% 25% 25%;
     border: 1px solid black;
     padding: 5px;
     margin: 20px;
@@ -89,7 +89,7 @@ p {
 /* project 1 */
 #main-image img { 
     width: 100%;
-    height: 40%;
+    height: auto;
 } 
 
 /* project 2 */
@@ -133,6 +133,7 @@ footer li {
 @media screen and (max-width: 980px) {
     header {
         flex-direction: column;
+        justify-content: center;
         }
     
     .portfolio-grid {
@@ -144,7 +145,9 @@ footer li {
       
 @media screen and (max-width: 768px) {
     header {
+        justify-content: center;
         flex-direction: column;
+        
     }
      
     .portfolio-grid {
@@ -156,6 +159,7 @@ footer li {
 @media screen and (max-width: 481px) {
     header {
         flex-direction: column;
+        justify-content: center;
     }
      
     .portfolio-grid {
