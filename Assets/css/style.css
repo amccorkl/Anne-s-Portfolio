@@ -79,6 +79,7 @@ p {
 .portfolio-grid {
     position: relative;
     display: grid;
+    /* Three rows of projects */
     grid-template-rows: 50% 25% 25%;
     border: 1px solid black;
     padding: 5px;
@@ -131,28 +132,20 @@ footer li {
 
 /*makes the screen responsive*/
 @media screen and (max-width: 980px) {
-    header {
+    header 
+    footer {
         flex-direction: column;
         justify-content: center;
         }
-    
-    .portfolio-grid {
-        justify-content: center;
-        align-items: column;
-    }
 }
      
       
 @media screen and (max-width: 768px) {
-    header {
+    header 
+    footer {
         justify-content: center;
         flex-direction: column;
         
-    }
-     
-    .portfolio-grid {
-        justify-content: center;
-        align-items: column;
     }
 }
 
@@ -162,9 +155,6 @@ footer li {
         justify-content: center;
     }
      
-    .portfolio-grid {
-        justify-content: center;
-        align-items: column;
-    }
+
 }
 
